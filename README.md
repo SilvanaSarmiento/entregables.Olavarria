@@ -1,2 +1,2 @@
-# Ejercicios-Programaci-n
+# EntregablesOlavarria
 Trabajos prácticos entregados curso cepit Olavarria
