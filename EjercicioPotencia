@@ -1,0 +1,31 @@
+//Programa que devuelva la potencia de un numero
+//la base y el exponente deben ser ingresados por teclado =readline-sync
+//el exponente solo debe ser mayor o igual a 0
+// debo declarar que un numero elevado a 0 es 1
+
+
+import* as rls from "readline-sync";
+
+let base: number= rls.questionInt("ingrese la base: ");
+let exponente: number= rls.questionInt("ingrese el exponente: ");
+ 
+function calcular(base: number, exponente: number) {
+    if (exponente >=0) {
+         
+        if (exponente === 0){
+            return 1;
+        } else {
+            return calcularPotencia (base,exponente);
+        }
+    }
+}
+ function calcularPotencia(base:number, exponente: number){
+    let resultado: number =1;
+    for (let i: number=0; i < exponente; i++){
+        resultado *= base;
+    }
+    return resultado;
+ }
+ let potencia: any = calcular (base, exponente);
+
+ console.log(base + "a al " + exponente + "potencia = " + potencia); 
