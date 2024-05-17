@@ -1,0 +1,33 @@
+//Encontrar el elemento mas grande de un arreglo
+//Dado el siguiente arreglo [4,7,9,3,1,45,67,23,29,78,11,16]
+//-Crear un programa que encuentre cual es el numero mas grande del arreglo e imprimirlo por consola
+//-Almacenar el numero mas grande en una variable global y pasarlo a una funcion para de terminar si en numero es par o impar
+
+
+
+
+let arregloNumeros: number[]= [4,7,9,3,1,45,67,23,29,78,11,16];
+let numMayor: number = arregloNumeros[0];  
+let indice: number;
+
+
+for (let indice= 0; indice <=12; indice++){
+    if (numMayor < arregloNumeros[indice]){
+        numMayor = arregloNumeros[indice];
+    }
+}
+console.log(`${numMayor} es el numero mayor en el arreglo `);
+esParOImpar()
+
+
+function esParOImpar(){
+    if (numMayor == 0){
+        console.log("el numero ingresado es 0");
+        } else {
+            if (numMayor % 2 == 0) {
+         console.log("el numero es Par");
+        } else {
+         console.log("el numero es Impar");
+            }
+        }
+    }
