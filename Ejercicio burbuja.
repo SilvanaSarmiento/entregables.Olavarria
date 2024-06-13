@@ -1,0 +1,62 @@
+let arregloBur= [14,7,46,8,55,22,3];
+
+
+function burbuja(arreglo:number[], cantidad:number) {
+    let intercambiarBur;
+    for(let i=0; i< arreglo.length; i++){
+    for(let j=0; j< arreglo.length; j++){
+
+        if(arreglo[j]< arreglo[j+1]){
+            intercambiarBur= arreglo[j];
+
+            arreglo[j]= arreglo[j + 1];
+            arreglo[j+1]= intercambiarBur;
+        }
+    }    
+    }
+    console.log(" Arreglo ordenado de forma descendiente: ")
+}
+
+function comparar (arreglo: number[], i: number, j: number): number {
+    let comparacion: number;
+    if (arreglo[i] === arreglo[j]){
+        comparacion=0;
+    } else if (arreglo[i] < arreglo[j]){
+        comparacion= -1;
+    } else {
+        comparacion= 1;
+    }  
+    return comparacion;
+    }
+
+function intercambiarBur(arreglo:number[], i:number, j:number){
+    let aux:number;
+    aux= arreglo[i];
+    arreglo[i]= arreglo[j];
+    arreglo[j]= aux;
+}
+
+
+function cargar(arreglo:number[], cantidad:number){
+    let i : number;
+    for (i = 0 ; i<cantidad; i++ ) {
+          arreglo[i] ;
+    }
+    }
+    
+function escribirEnUnaLinea(arreglo:number[], cantidad:number) {
+    let i:number;
+    let vector:string = "" ;
+    for (i = 0 ; i<cantidad; i++) {
+    vector += `${arreglo[i]} `;
+    }
+    console.log (vector);
+    }
+
+
+let limite: number = 7;
+let arreglo: number[]= new Array(limite);
+cargar(arregloBur, limite,);
+escribirEnUnaLinea(arregloBur, limite);
+burbuja(arregloBur, limite);
+escribirEnUnaLinea(arregloBur, limite);
