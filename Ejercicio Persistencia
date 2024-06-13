@@ -1,0 +1,30 @@
+import fs from "node:fs";
+
+const precios: number[]= [525, 3500, 400, 1999];
+const productos: string[]= ["Leche", "Galletitas", "Harina", "Queso"];
+ let contPrecios: string= "";
+ let contProductos: string= "";
+
+for( let i: number=0; i < precios.length; i++){
+    contPrecios += `${precios[i]} `
+}
+
+for( let i: number=0; i < productos.length; i++){
+    contProductos += `${productos[i]} `
+}
+
+fs.writeFileSync(`./precios.txt `, contPrecios);
+fs.writeFileSync(`./productos.txt `, contProductos);
+
+let datosPrecios: string= fs.readFileSync(`./precios.txt `, "utf8");
+
+let datosProductos: string= fs.readFileSync(`./productos.txt `, "utf8");
+
+
+let arrayPrecios: string[]= datosPrecios.split(" ");
+let arrayProductos: string[]= datosProductos.split(" "); 
+
+console.log("Precios: ")
+console.log(arrayPrecios);
+console.log("Productos: ")
+console.log(arrayProductos);
