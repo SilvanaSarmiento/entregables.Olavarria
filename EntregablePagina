@@ -1,0 +1,76 @@
+Codigo html: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable Pagina</title>
+    <link rel="stylesheet" href="/clase.Js/styleEntregable.css">
+</head>
+<body>
+    <h1> Ola de frío </h1>
+    <h2> Olavarría, dentro del alerta por temperaturas extremas</h2>
+    <div>
+    <p> El frio no da tregua.
+     <p class="destacado"> Olavarría es una de las ciudades donde la ola polar se hizo sentir.</p>
+    <p> Esta semana, se ubicó dos veces como la ciudad más fría de la provincia de Buenos Aires y desde el Servicio Meteorológico Nacional alerta sobre temperaturas extremas durante el fin de semana.
+
+        Este sábado 7 de julio, Olavarría registró una temperatura mínima de -3°C, y para el domingo se prevé que pueda llegar a los 5 grados bajo cero.
+        
+       <p class="destacado"> El SMN emitió un alerta amarillo.</p>
+        <p>Esta alcanza a toda la provincia de Buenos Aires menos la costa; y a zonas de Santa Fe, Entre Ríos, Corrientes, Santiago del Estero, Jujuy, Tucumán, Catamarca, La Rioja, San Juan, Mendoza, Córdoba, San Luis, La Pampa, Neuquén, Chubut, Santa Cruz y Tierra del Fuego.
+        
+        En zonas de Santa Cruz, el aviso por las bajas temperaturas extremas sube a alerta rojo. 
+        
+        Cabe recordar que el alerta de nivel amarillo establece un efecto leve a moderado en la salud, de acuerdo al sistema del SMN.
+        Implica, en este caso, que las temperaturas pueden ser peligrosas, sobre todo para los grupos de riesgo, como niños y niñas, personas mayores de 65 años, con enfermedades crónicas.
+    </p>
+    <h3>Consejos a tener en cuenta ante la ola polar:</h3>
+    <ul class="lista">
+    <li> No exponerse por mucho tiempo al exterior y en caso de salir, abrigarse con varias capas de ropa. </li>
+    <li> Generar calor corporal a través del movimiento. </li>    
+    <li> Calefaccionar el hogar de forma segura.</li>
+    <li> Evitar cambios bruscos de temperatura.</li>
+    <li>Beber mucho líquido.</li>
+    <li>No automedicarse. </li>
+    <li>Prestar atención, especialmente, a niños, personas mayores y pacientes de enfermedades crónicas. </li>
+    </ul>
+   </div>
+
+    <img src="./imagen/20240629132037_frio-buenos-aires-2029.jpg">
+    <h4> Temperatura para los proximos dias </h4>
+    <p> Has click aca: </p>
+    <a class="enlace" href="https://www.meteored.com.ar/tiempo-en_Olavarria-America+Sur-Argentina-Provincia+de+Buenos+Aires--1-16908.html"> Link </a>
+</body>
+</html>
+
+Codigo CSS:
+
+body{
+    font-family: 'Times New Roman';
+    color: rgb(11, 11, 145);
+}
+p{
+    font-style: normal;
+    color: black;    
+}
+.destacado{
+    color: red;
+    font-family: cursive;
+}
+.lista{
+    color:orangered;
+    text-decoration: underline;
+}
+div{
+    border: solid greenyellow;
+}
+
+.enlace:hover{
+    color:violet;
+    cursor: pointer;
+}
+.enlace:visited{
+    color: black;  
+}
