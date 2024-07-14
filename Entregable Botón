@@ -1,0 +1,69 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable Boton</title>
+    <link rel="stylesheet" href="./styleBoton.css">
+</head>
+<body>
+
+    <div class="contenedor">
+    <div class="bloque1"
+    id="bloque1">
+    <button id="boton1"  > Mostrar/Ocultar </button> </div>
+    <div class="bloque2"
+    id="bloque2">
+    <button id="boton2" > Mostrar/Ocultar </button> </div>
+</div>
+<script type="text/javascript" src="scriptBoton.js"></script>
+</body>
+</html> 
+
+CSS:
+.contenedor{
+    display: flex;
+    background-color: white;
+    border: solid, 3px, green;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 305px;
+}
+.bloque1{
+    background-color: rgb(219, 69, 42);
+    border: solid, 3px, black;
+    width: 300px;
+    height: 300px;
+    
+}
+.bloque2{
+    background-color: rgb(219, 69, 42);
+    border: solid, 3px, black;
+    width: 300px;
+    height: 300px;
+    visibility: hidden;
+}
+
+JS:
+
+const boton1 = document.getElementById('boton1');
+boton1.addEventListener("click", mostrarOcultar);
+
+const boton2 = document.getElementById('boton2');
+boton2.addEventListener("click", mostrarOcultar);
+
+function mostrarOcultar(){
+    let bloque1 = document.getElementById('bloque1');
+    let bloque2 = document.getElementById('bloque2');
+    
+     if (bloque1.style.visibility === 'hidden') {
+        bloque1.style.visibility = 'visible';
+        bloque2.style.visibility = 'hidden';
+      } else {
+        bloque1.style.visibility = 'hidden';
+        bloque2.style.visibility = 'visible';
+      }
+    }
