@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flosil supermarket</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+     <header>
+    <div class="contenedor">
+    <div class="div1" id="div1"></div>
+  <img class="logo" src="./Default_A_vibrant_logo_for_Flosil_Supermarket_rendered_in_digi_1.jpg " alt="logo">  
+    
+<div class="div2">
+ <a class="home" href="http://127.0.0.1:3000/pagina1/pag1.html"> Home </a> </div>
+<div class="div3"> 
+<a class="comprar" href="http://127.0.0.1:3000/pagina2/pag2.html"> Comprar </a></div>
+<div class="div4"> 
+<a class="contacto" href="http://127.0.0.1:3000/pagina3/pag3.html"> Contacto </a> </div>
+</div>    
+ </header>
+
+ <section>
+<div class="contenedor2">
+<div class="arroz"> 
+<a class="img" href="http://127.0.0.1:3000/pagina2/pag2.html"> <img class="arroz" src="./WhatsApp Image 2024-07-19 at 12.23.16.jpeg" alt="oferta arroz"> </div> </a>      
+</div>
+</section>
+<aside>
+<div class="contenedor3">
+<div class="historia">
+
+   <h1> Nuestra Historia</h1>
+   <p>  Hace diez años, un pequeño supermercado abrió sus puertas en la ciudad de Olavarría, provincia de Buenos Aires, Argentina.
+    Fundado con la visión de proveer productos básicos esenciales para la vida diaria, se ha convertido en un pilar fundamental de la comunidad local.
+   
+   <p>Desde sus humildes comienzos, ha crecido en tamaño y popularidad, adaptándose a las necesidades cambiantes de los clientes y ofreciendo una amplia gama de productos que van desde alimentos frescos hasta productos de limpieza y artículos de cuidado personal.</p>
+ 
+   <p> Con el tiempo, el supermercado ha expandido su oferta para incluir productos locales y artesanales, apoyando a productores argentinos y promoviendo la economía local. Su compromiso con la sostenibilidad ambiental también ha ido creciendo, introduciendo iniciativas como el reciclaje y la reducción de plásticos de un solo uso.</p>
+  
+  <p> Hoy en día, este supermercado es más que un lugar para comprar; es un símbolo de resiliencia, comunidad y servicio confiable en el corazón de Olavarría. Su historia está marcada por la dedicación a sus clientes y a la calidad, manteniendo vivos los valores con los que comenzó hace una década. </p>
+  
+</div>
+
+
+<div class="fachada">
+  <img class="fachada" src="./Default_A_vibrant_and_eclectic_facade_of_the_Flosil_supermarke_3.jpg" alt="fachada supermercado"></div>
+
+  <div class="gondolas">
+<img class="gondolas" src="./Default_A_vibrant_and_modern_interior_of_a_supermarket_called_2.jpg" alt="interior de supermercado"> </div>  
+</div> 
+</aside>
+<footer>
+Copyright © 2024 Cencosud - Flosil. Términos y Condiciones | Seguridad y Privacidad | Código de ética
+</footer>
+ 
+    
+ <script src="./script1.js"> </script>   
+</body>
+</html>
