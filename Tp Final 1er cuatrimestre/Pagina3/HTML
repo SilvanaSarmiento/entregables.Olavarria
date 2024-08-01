@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="./style3.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="contenedor">
+            <div class="div1" id="div1"></div>
+          <img class="logo" src="./Default_A_vibrant_logo_for_Flosil_Supermarket_rendered_in_digi_1.jpg" alt="logo">  
+            
+        <div class="div2">
+         <a class="home" href="http://127.0.0.1:3000/pagina1/pag1.html"> Home </a> </div>
+        <div class="div3"> 
+        <a class="comprar" href="http://127.0.0.1:3000/pagina2/pag2.html"> Comprar </a></div>
+        <div class="div4"> 
+        <a class="contacto" href="http://127.0.0.1:3000/pagina3/pag3.html"> Contacto </a> </div>
+        </div>    
+         </header>
+        
+        <h1>Formulario de contacto</h1>
+        <div class="contenedor2">
+
+        <form>
+            <div class="nombre">
+            <label for="nombre">Nombre:</label>
+            <input class="input1" type="text" id="nombre"></div>
+            <div class="apellido">
+            <label for="apellido">Apellido:</label>
+            <input class="input2" type="text" id="apellido"></div>
+            <div class="correo">
+            <label for="correo">Correo:</label> 
+            <input class="input3" type="text" id="correo"></div>
+            <div class="telefono">
+            <label for="telefono">Telefono:</label>
+            <input class="input4" type="text" id="telefono"></div>
+            <div class="consultas">
+            <label for="consultas">¿En que podemos ayudarte?:</label>
+            <input class="input5" type="text" id="consultas"></div>
+           
+            <button class="btn" id="enviar"">Enviar</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalMensaje"></p>
+                </div>
+              </div> 
+      
+          </form>
+         <img class="imgContacto" src="./contacto.jpg" alt="datos">
+        </div>
+        
+        
+        <footer>
+            Copyright © 2024 Cencosud - Flosil. Términos y Condiciones | Seguridad y Privacidad | Código de ética
+            </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>       
+        <script src="./script3.js"></script>
+       
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modalMessage"></p>
+            </div>
+          </div> 
+    </body>
+</html>
