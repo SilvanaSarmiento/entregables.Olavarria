@@ -1,1 +1,59 @@
+let lista = document.getElementById("lista")
+let arrayProductos = ["Arroz", "Fideos", "Pan", "Sal", "Azucar", "Yerba", "Agua", "Leche", "Queso", "Harina", "Gaseosa", "Yogurt"];
+let arrayPrecios = [2700, 2100, 3300, 1100, 1300, 6000, 1050, 1800, 9000, 1500, 2200, 2300];
+let arrayCantidad = [10, 15, 7, 12, 10, 13, 15, 10, 17, 5, 12, 10];
 
+function unirProductos(arrayProductos, arrayPrecios){
+
+    for(let i = 0; i < arrayProductos.length; i++){
+        let li = document.createElement("li");
+        let texto = document.createTextNode(`Nombre: ${arrayProductos[i]} - Precio: $${arrayPrecios[i]} - Stock: ${arrayCantidad[i]}`);
+        li.appendChild(texto);
+        li.setAttribute("class", "lista");
+        lista.appendChild(li);
+    }
+}
+unirProductos(arrayProductos, arrayPrecios, arrayCantidad);
+
+let modal = document.getElementById("myModal");
+let span = document.getElementsByClassName("close")[0];
+let modalMessage = document.getElementById("modalMessage");
+
+for (let i = 0; i < arrayProductos.length; i++) {
+    let button = document.querySelectorAll("div button")[i]; //querySelectorAll selecciona todos los botones
+    button.addEventListener("click", () => {
+
+ let cantidad=document.querySelectorAll("div input")[i].value;
+    cantidad=Number(cantidad);
+
+
+if(cantidad>0 && arrayCantidad[i] >= cantidad){
+comprar(i,cantidad);
+ }else{
+    modalMessage.textContent = `Ingrese un valor mayor a 0, o no hay stock de ${arrayProductos[i]}`;
+    modal.style.display = "block";
+ }  
+});
+}
+let totalCompra= 0;
+function comprar(i,cantidad) {
+let subtotal = cantidad * arrayPrecios[i];  
+totalCompra += subtotal;
+document.getElementById("total").innerText= totalCompra;
+
+arrayCantidad[i] -= cantidad;
+document.getElementById(`stock-${arrayProductos[i]}`).innerText = arrayCantidad[i];
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+let buttonComprar = document.getElementById('buttonComprar'); //boton que al poner comprar me manda al la pag de contacto
+buttonComprar.addEventListener("click", () => {
+window.location.href = 'http://127.0.0.1:3000/pagina3/pag3.html';
+});
