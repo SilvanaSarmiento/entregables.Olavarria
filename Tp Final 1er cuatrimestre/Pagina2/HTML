@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flosil</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor1">
+        <div class="div1" id="div1"></div>
+      <img class="logo" src="./Default_A_vibrant_logo_for_Flosil_Supermarket_rendered_in_digi_1.jpg" alt="logo">  
+        
+    <div class="div2">
+     <a class="home" href="http://127.0.0.1:3000/pagina1/pag1.html"> Home </a> </div>
+    <div class="div3"> 
+    <a class="comprar" href=http://127.0.0.1:3000/Pag2/index.html""> Comprar </a></div>
+    <div class="div4"> 
+    <a class="contacto" href="http://127.0.0.1:3000/pagina3/pag3.html"> Contacto </a> </div>
+    </div>    
+     </header>
+    <main>
+       
+        <div id="contenedor2" class="contenedor2">
+            <h1>Lista de productos</h1>
+            <ul class="lista" id=lista> </ul>
+        </div> 
+    </main>
+    <h1>Compralos aca </h1>
+   
+    <div id="contenedor3" class="contenedor3">
+       
+            <div class="arroz" id="arroz">
+            <p>ARROZ</p>   
+            <p>Precio Oferta $<span> 2700 </span> </p> 
+            <p>Stock: <span id="stock-Arroz">10</span></p>
+            <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+            <button class="button" type="button">Agregar</button>
+            <img class= "producto1" src="./arroz2.jpeg" alt="arroz"></div>
+            
+           <div class="fideos" id="fideos">
+           <p> FIDEOS</p> 
+           <p>Precio $<span> 2100 </span> </p> 
+           <p>Stock: <span id="stock-Fideos">15</span></p>
+           <input class="input" type="number" name="cant" id="cant" min="0" value="0" required>
+           <button class="button" type="button">Agregar</button>
+           <img class="producto2" src="./fideos2.jpeg" alt="fideos"></div>
+     
+         
+           <div class="pan" id="pan">
+            <p> PAN LACTAL</p>
+           <p>Precio $<span> 3300 </span> </p> 
+           <p>Stock: <span id="stock-Pan">7</span></p>
+           <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+           <button class="button" type="button">Agregar</button>
+           <img class="producto3" src="./pan2.jpeg" alt="pan lactal"></div>
 
+         
+           <div class="sal" id="sal">
+            <p> SAL</p>
+           <p>Precio $<span> 1100 </span> </p> 
+           <p>Stock: <span id="stock-Sal">12</span></p>
+           <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+           <button class="button" type="button">Agregar</button>
+           <img class="producto4" src="./sal.jpeg" alt="sal"></div>
+
+           
+           <div class="azucar" id="azucar">
+           <p>AZUCAR</p>
+           <p>Precio $<span> 1300 </span> </p> 
+           <p>Stock: <span id="stock-Azucar">10</span></p>
+           <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+           <button class="button" type="button">Agregar</button>
+           <img class="producto5" src="./azucar2.jpeg" alt="azucar"></div>
+        
+           <div class="yerba id="yerba">
+            <p> YERBA</p>
+           <p>Precio $<span> 6000 </span> </p> 
+           <p>Stock: <span id="stock-Yerba">13</span></p>
+           <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+           <button class="button" type="button">Agregar</button>
+           <img class="producto6" src="./yerba.jpeg" alt="yerba"></div>
+
+        <div class="agua" id="agua">
+            <p> AGUA</p>
+           <p>Precio $<span> 1050 </span> </p> 
+           <p>Stock: <span id="stock-Agua">15</span></p>
+           <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+           <button class="button" type="button">Agregar</button>
+           <img class="producto7" src="./agua2.jpeg" alt="agua"></div>
+
+           <div class="leche" id="leche">
+            <p> LECHE</p>
+            <p>Precio $<span> 1800 </span> </p> 
+            <p>Stock: <span id="stock-Leche">10</span></p>
+            <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+            <button class="button" type="button">Agregar</button>
+            <img class="producto8" src="./leche2.jpeg" alt="leche"></div>
+
+            <div class="queso" id="queso">
+            <p> QUESO</p>
+            <p>Precio $<span> 9000 </span> </p> 
+            <p>Stock: <span id="stock-Queso">17</span></p>
+            <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+            <button class="button" type="button">Agregar</button>
+            <img class="producto9" src="./queso.jpeg" alt="queso"></div>
+
+            <div class="harina" id="harina">
+            <p> HARINA</p>
+            <p>Precio $<span> 1500 </span> </p> 
+            <p>Stock: <span id="stock-Fideos">5</span></p>
+            <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+            <button class="button" type="button">Agregar</button>
+            <img class="producto10" src="./harina2.jpeg" alt="harina"></div>
+
+            <div class="coca" id="coca">
+              <p> GASEOSA</p>
+              <p>Precio $<span> 2200 </span> </p> 
+              <p>Stock: <span id="stock-Gaseosa">12</span></p>
+              <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+              <button class="button" type="button">Agregar</button>
+              <img class="producto11" src="./coca.jpg" alt="Gaseosa"></div>
+
+              <div class="yogurt" id="yogurt">
+                <p> YOGURT</p>
+                <p>Precio $<span> 2300 </span> </p> 
+                <p>Stock: <span id="stock-Yogurt">10</span></p>
+                <input class="input" type="number" name="cant" id="cant" min="0" value="0" required> 
+                <button class="button" type="button">Agregar</button>
+                <img class="producto12" src="./yogurt.jpg" alt="yogurt"></div>
+              </main>
+
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalMessage"></p>
+                </div>
+              </div>
+
+ 
+              <div class="contenedor4">
+
+   
+                <form class="form" action="#">
+                  <label for="lang">Seleccione su método de pago:</label>
+                  <select name="metodo_pago" id="lang">
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                    <option value="billetera_virtual">Billetera Virtual</option>
+                  </select>
+               
+            </form>  
+                       <h2> Total de su compra: <span id="total">   000</span>
+                        <button class="button2" id="buttonComprar" type="buttonComprar">Comprar</button>
+                    </h2>
+             
+                </div>
+
+    <footer>
+        Copyright © 2024 Cencosud - Flosil. Términos y Condiciones | Seguridad y Privacidad | Código de ética
+    </footer>  
+    
+    <script src="./script2.js"></script>
+</body>
+</html>
