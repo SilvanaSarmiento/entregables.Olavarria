@@ -1,1 +1,242 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.contenedor1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(245, 183, 69);
 
+}
+    
+.div1{
+    width: 100%;
+    height: 20%;
+}
+.logo{
+    width: 15%;
+    height: 15%;
+}
+.home{
+    font-style: normal;
+    font-weight: 100%;
+    font-size: 500%;
+    font-family: fantasy;
+    text-decoration: none;
+    color: rgb(12, 68, 40);
+    }
+.home:hover{
+    color:rgb(130, 238, 211);
+    cursor: pointer;
+  }
+    
+.comprar{
+    font-style: normal;
+    font-weight: 100%;
+    font-size: 500%;
+    font-family: fantasy;
+    text-decoration: none;
+    color: rgb(12, 68, 40);
+  
+}
+.comprar:hover{
+    color:rgb(130, 238, 211);
+    cursor: pointer;
+    
+}
+.contacto{
+    font-style: normal;
+    font-weight: 100%;
+    font-size: 500%;
+    font-family: fantasy;
+    text-decoration: none;
+    color: rgb(12, 68, 40);
+} 
+.contacto:hover{
+    color:rgb(130, 238, 211);
+    cursor: pointer;
+}
+h1{
+    font-style: normal;
+    font-weight: 100%;
+    font-size: 300%;
+    font-family: fantasy;
+    color: rgb(12, 68, 40);
+}
+
+.contenedor2 {
+ 
+    width: 100%;
+    height: 100%;
+     
+   }
+.lista{
+    width: 100%;
+    height: 100%;
+    list-style-type: none; /* Quitar puntos de la lista */
+    font-size: 150%;
+    font-family: fantasy;
+    color: rgb(12, 68, 40); 
+}
+   
+.contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+      width: 100%;
+      height: 100%;
+     
+   }
+   
+   .yerba, .sal, .arroz, .fideos, .pan, .agua, .queso, .leche, .harina, .sal, .azucar, .coca, .yogurt {
+       background-color: #fff;
+       width: 30%;
+       height: 30%;
+       border: solid 2px rgb(12, 68, 40);
+       border-radius: 8px;
+       box-shadow: 0 4px 7px rgb(43, 42, 41);
+       text-align: center;
+       margin: 1%;
+   }
+   
+   p{
+       font-size: 200%;
+       font-family: fantasy;
+       color: rgb(12, 68, 40); 
+   }
+   
+   input{
+       width: 30%;
+       height: 30%;
+       font-size: 200%;
+       color: white;
+       background-color: rgb(245, 183, 69);
+       border-radius: 8px;
+   
+     
+   }
+   
+   button {
+       background-color: rgb(245, 183, 69); 
+       border: none;
+       color: white;
+       padding: 3% 5%;
+       border-radius: 5px;
+       font-size: 20px;
+       cursor: pointer;
+       margin: 1%;
+      
+   }
+   
+   button:hover {
+       background-color: rgb(245, 99, 1);
+   }
+   
+   .contenedor4{
+       width: 100%;
+       height: 100%;
+       overflow-x: auto;
+   
+   }
+   
+   h2 {
+       text-align: center;
+       margin: 20px 0;
+       color: #333;
+   }   
+   
+   .form {
+       width: 400px;
+       margin: 20px auto;
+       padding: 15px;
+       border: 1px solid #ccc;
+       border-radius: 8px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       font-family: fantasy;
+       background-color: rgb(245, 183, 69);
+   }
+   .form label {
+       display: block;
+       margin-bottom: 10px;
+       font-size: 16px;
+       color: #333;
+   }
+   .form select {
+       width: 100%;
+       padding: 8px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       font-size: 16px;
+   }
+   .form option {
+       padding: 8px;
+   }
+   
+   .button2{
+       background-color: rgb(245, 183, 69); 
+       border: none;
+       color: white;
+       padding: 1% 1%;
+       border-radius: 5px;
+       font-size: 20px;
+       cursor: pointer;
+       margin: 1%;
+   }
+   .button2:hover {
+       background-color: rgb(245, 99, 1);
+   }
+   
+   /* Estilo para el fondo del modal */
+   .modal {
+    display: none; /* Oculto por defecto */  
+    position: fixed; /* Fijo */  
+    z-index: 1; /* Encima de otros elementos */  
+    left: 0;  
+    top: 0;  
+    width: 100%; 
+    height: 100%;  
+    overflow: auto; /* Permitir desplazamiento si es necesario */  
+     
+     }
+     
+     /* Estilo para el contenido del modal */
+     .modal-content {
+        background-color: rgb(150, 150, 150);  
+        margin: 15% auto; /* Margen automático */  
+        padding: 60px;  
+        border: 1px solid #080808;  
+        width: 80%;
+        text-align: center;  
+    }  
+    #modalMensaje{
+        font-size: 60px;
+        color:rgb(12, 68, 40);
+        font-family: fantasy;
+    }
+     /* Estilo para el botón de cerrar del modal */
+     .close {
+        color: #000000;  
+        float: right;  
+        font-size: 60px;  
+        font-weight: bold; 
+     }
+     
+     .close:hover,
+     .close:focus {
+       color: black;
+       text-decoration: none;
+       cursor: pointer;
+     }
+   
+   footer{
+       background-color: rgb(12, 68, 40);
+       width: 100%;
+       height: 300%;
+       text-align: center;
+   }
