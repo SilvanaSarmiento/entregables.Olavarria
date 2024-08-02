@@ -55,12 +55,7 @@
          <img class="imgContacto" src="./contacto.jpg" alt="datos">
         </div>
         
-        
-        <footer>
-            Copyright © 2024 Cencosud - Flosil. Términos y Condiciones | Seguridad y Privacidad | Código de ética
-            </footer>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>       
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>       
         <script src="./script3.js"></script>
        
         <div id="myModal" class="modal">
@@ -69,5 +64,8 @@
               <p id="modalMessage"></p>
             </div>
           </div> 
+          <footer>
+            Copyright © 2024 Cencosud - Flosil. Términos y Condiciones | Seguridad y Privacidad | Código de ética
+            </footer>     
     </body>
 </html>
